@@ -12,7 +12,24 @@
   .font-style{
       font-size: 13px;
   }
-  
-  
+
+  input[type="search"]{
+    background-image:url('../img/voice_command.png');
+    background-size: 25px;
+    background-position: 95% 5px; 
+    background-repeat: no-repeat; 
+    box-shadow: 0 1px 1px rgb(170, 170, 170);
+
+  }
+
+  input[type="search"]:hover{
+      box-shadow: 0 2px 5px gray;
+  }
+
+input[type="search"]:focus{
+    border-color: rgb(231, 231, 231);
+    box-shadow: 0 1px 1px rgb(170, 170, 170);
+}
+
  
   
