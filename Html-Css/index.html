@@ -44,14 +44,16 @@
         <div class="row justify-content-md-center">
             <div class="col-md-6">
                 <form>
-
-                    <div class="form-row mt-3">
-                        <input type="search" class="form-control rounded-0 py-2" id="input-search">
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control border-right-0 rounded-0" placeholder="Search Google" required>
+                        <div class="input-group-append">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Search by voice"><span class="input-group-text bg-white rounded-0"><img src="img/voice_command.png"></span></a>
+                        </div>
                     </div>
                     <div class="form-row">
                         <div class="mx-auto p-3">
-                            <button type="submit" class="btn btn-default m-1">Google Search</button>
-                            <button type="submit" class="btn btn-default m-1">I'm feeling Lucky</button>
+                            <button type="submit" class="btn btn-default m-1 rounded-0">Google Search</button>
+                            <button type="submit" class="btn btn-default m-1 rounded-0">I'm feeling Lucky</button>
                         </div>
                     </div>
                 </form>
@@ -75,16 +77,16 @@
                 </div>
                 <div class="row py-2 border-top">
                     <div class="col-md-6 px-4 ">
-                            <span class="text-muted pr-4">Advertising</span>
-                            <span class="text-muted pr-4">Business</span>
-                            <span class="text-muted">About</span>
+                            <a href="#" class="text-muted pr-4" >Advertising</a>
+                            <a href="#" class="text-muted pr-4">Business</a>
+                            <a href="#" class="text-muted">About</a>
                         </div>
                         <div class="col-md-6 px-4">
                             <div class="float-right">
-                                <span class="text-muted pl-4">Privacy</span>
-                                <span class="text-muted pl-4">Terms</span>
-                                <span class="text-muted pl-4">Setting</span>
-                                <span class="text-muted pl-4">Use Google.com</span>
+                                <a href="#" class="text-muted pl-4">Privacy</a>
+                                <a href="#" class="text-muted pl-4">Terms</a>
+                                <a href="#" class="text-muted pl-4">Setting</a>
+                                <a href="#" class="text-muted pl-4">Use Google.com</a>
                             </div>
                         </div>
                     </div>
@@ -92,8 +94,14 @@
             
         </div>
     </footer>
-
+    
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+            </script>
 </body>
 </html>
