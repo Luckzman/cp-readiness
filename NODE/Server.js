@@ -3,6 +3,8 @@ const app = express();
 const router = express.Router();
 const path = __dirname + '/views/';
 
+app.use('/files', express.static(__dirname+'/assets'));
+
 router.use(function (req,res,next) {
   console.log("/" + req.method);
   next();
