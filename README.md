@@ -8,4 +8,4 @@ This Project contain three (3) apps built with three different technologies
 2. Sample Todo List which was built using React library
 3. Sample Node - Express website which was built using Express technology and some middleware.
 
-You can browse through each of the folder to access the project.
+You can browse through each of the folder to access each of the project.
